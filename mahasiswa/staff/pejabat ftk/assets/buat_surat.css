@@ -1,0 +1,126 @@
+/* buat_surat.css - style form dan tombol ala surat_final.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d9f0e1; /* hijau muda terang */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border: 1px solid #cde5d6;
+}
+
+h2 {
+    text-align: center;
+    color: #38b48b; /* hijau terang */
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #a9d5b1;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f9fefb;
+    transition: border-color 0.3s ease;
+}
+
+select:focus,
+input[type="file"]:focus {
+    border-color: #38b48b;
+    outline: none;
+    background-color: #e8f7ee;
+}
+
+/* Atur spasi antar elemen form */
+form > label,
+form > select,
+form > input,
+form > button {
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+}
+
+/* Tombol utama di form (simpan draft dan kirim) */
+button[type="submit"] {
+    background-color: #0D6E63; /* hijau gelap */
+    color: #fff;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 12px;
+}
+
+button[type="submit"][name="aksi"][value="draft"] {
+    background-color: #f0ad4e; /* kuning emas */
+}
+
+button[type="submit"][name="aksi"][value="draft"]:hover {
+    background-color: #d69531;
+}
+
+button[type="submit"][name="aksi"][value="kirim"]:hover {
+    background-color: #074936;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* Tombol di dalam anchor (Lihat Draft Surat & Kembali) */
+a > button {
+    background-color: #0D6E63;
+    color: white;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 4%;
+    text-align: center;
+}
+
+a > button:last-child {
+    margin-right: 0;
+}
+
+a > button:hover {
+    background-color: #074936;
+}
+
+/* Responsive jika di layar kecil */
+@media (max-width: 480px) {
+    a > button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+}

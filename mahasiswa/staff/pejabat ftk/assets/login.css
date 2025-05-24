@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/logo.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #000000;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8); /* Tambah agar teks terlihat */
+    color: #000; /* Warna teks saat mengetik */
+    box-sizing: border-box; /* Pastikan padding tidak keluar dari box */
+}
+
+/* Placeholder tetap hitam dan di tengah */
+input::placeholder {
+    color: #000000;
+    text-align: left;
+}
+
+/* Fokus: tanpa outline dan tetap transparan */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 1); /* Lebih solid saat fokus */
+    color: #000;
+}
+
+/* Placeholder tetap hitam saat fokus */
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+    color: #000;
+    text-align: left;
+}
+
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+a button {
+    background-color: #198754;
+}

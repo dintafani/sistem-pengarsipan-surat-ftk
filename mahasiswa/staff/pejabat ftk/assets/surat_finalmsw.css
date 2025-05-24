@@ -1,0 +1,94 @@
+/* assets/css/surat_final.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f7f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+h3 {
+    text-align: center;
+    color: #0D6E63;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #0D6E63;
+    color: #fff;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Tombol Umum */
+.btn-download,
+.btn-hapus,
+a button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Warna tombol masing-masing */
+.btn-download {
+    background-color: #0D6E63;
+}
+.btn-download:hover {
+    background-color: #0a5b52;
+    transform: translateY(-2px);
+}
+
+.btn-hapus {
+    background-color: #e74c3c;
+}
+.btn-hapus:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+a button {
+    background-color: #0D6E63;
+}
+a button:hover {
+    background-color: #0D6E63;
+    transform: translateY(-2px);
+}
+a.button.back {
+    background-color: #0D6E63;
+}
+
+a.button.back:hover {
+    background-color: #27ae60;
+}
